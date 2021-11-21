@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
     }
     
-    let emojiCollection = ["🦊", "🦁", "🦊", "🦁"]
+    let emojiCollection = ["🦊", "🦁", "🐰", "🐻"]
     
     
 
