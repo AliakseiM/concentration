@@ -9,9 +9,9 @@
 import Foundation
 
 class ConcentrationGame {
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
-    var indexOfOneAndOnlyFaceUpCard: Int? {
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             var foundIndex: Int?
             
@@ -50,6 +50,7 @@ class ConcentrationGame {
     }
     
     init(numberOfPairs: Int) {
+        assert(numberOfPairs > 0, "ConcentrationGame.init(\(numberOfPairs)): must have at least one pair of cards ")
         for _ in 1...numberOfPairs {
             let card = Card()
             cards.append(card)
